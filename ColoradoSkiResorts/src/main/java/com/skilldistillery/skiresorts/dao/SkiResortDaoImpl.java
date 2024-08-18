@@ -24,8 +24,8 @@ public class SkiResortDaoImpl implements SkiResortDAO {
 
 	@Override
 	public List<SkiResort> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		String jpql = "SELECT resort FROM SkiResort resort";
+		return em.createQuery(jpql, SkiResort.class).getResultList();
 	}
 
 	@Override
