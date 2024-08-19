@@ -63,12 +63,12 @@ public class SkiResort {
 		this.description = description;
 	}
 
-	public int getDateFounded() {
+	public int getYearFounded() {
 		return yearFounded;
 	}
 
-	public void setDateFounded(int dateFounded) {
-		this.yearFounded = dateFounded;
+	public void setYearFounded(int yearFounded) {
+		this.yearFounded = yearFounded;
 	}
 
 	public String getFounder() {
@@ -138,12 +138,11 @@ public class SkiResort {
 
 	@Override
 	public String toString() {
-		return "SkiResort [id=" + id + ", name=" + name + ", description=" + description + ", dateFounded="
+		return "SkiResort [id=" + id + ", name=" + name + ", description=" + description + ", yearFounded="
 				+ yearFounded + ", founder=" + founder + ", baseElevation=" + baseElevation + ", highestElevation="
 				+ highestElevation + ", skiableTerrain=" + skiableTerrain + ", numberOfTrails=" + numberOfTrails
 				+ ", numberOfLifts=" + numberOfLifts + ", longestRun=" + longestRun + ", imageURL=" + imageURL + "]";
 	}
-
 
 
 	
